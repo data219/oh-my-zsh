@@ -47,16 +47,16 @@ alias ff='find . -type f -name'
 alias h='history'
 alias hgrep="fc -El 0 | grep"
 alias help='man'
-alias j='jobs'
+#alias j='jobs'
 alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
 
 alias whereami=display_info
 
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+#alias rm='rm -i'
+#alias cp='cp -i'
+#alias mv='mv -i'
 
 # zsh is able to auto-do some kungfoo
 # depends on the SUFFIX :)
