@@ -7,3 +7,10 @@ alias rsync.from.soprado-dev='rsync -avrz --exclude="^var/cache/" --progress -e 
 alias rsync.to.soprado-dev='rsync -avrz --exclude="var/cache/" --progress -e ssh --exclude=cache /home/markmann/workspace/p24-web/ soprado-dev:work/p24-web/'
 
 alias ack='ack-grep'
+alias sudp='sudo'
+
+alias open='xdg-open'
+alias o='xdg-open'
+
+alias cya='sudo reboot'
+alias kthxbai='sudo halt'
