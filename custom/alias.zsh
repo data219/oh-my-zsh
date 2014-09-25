@@ -11,3 +11,5 @@ alias kthxbai='sudo halt'
 
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+
+alias genghis='php -S 0.0.0.0:8080 ~/bin/genghis.php'
