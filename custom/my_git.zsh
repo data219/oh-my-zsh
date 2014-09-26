@@ -1,0 +1,8 @@
+alias git.branch.delete.merged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias gbdm='git.branch.delete.merged'
+alias gpp='gup && gp'
+alias gpum='git pull upstream master'
+alias good.morning='rm /tmp/gm.branch; ~p24web && gwip; echo $(current_branch) > /tmp/gm.branch && gcm && gpum && gp && cat /tmp/gm.branch | xargs -n 1 git checkout'
+alias gm='good.morning'
+alias hub.pr='hub pull-request'
+alias pr='hub pull-request'
