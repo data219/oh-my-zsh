@@ -10,4 +10,5 @@ desktop=~/Desktop
 gdrive=~/GoogleDrive
 sf=~/workspace/symfony
 cash=~/workspace/CASH
-: ~downloads ~dropbox ~workspace ~p24web ~testing ~vagrant ~images ~desktop ~gdrive ~sf ~p24dev ~cash
+finite=~/workspace/Finite
+: ~downloads ~dropbox ~workspace ~p24web ~testing ~vagrant ~images ~desktop ~gdrive ~sf ~p24dev ~cash ~finite
