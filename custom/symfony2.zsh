@@ -1,2 +1,4 @@
-alias sfsh='php app/console -s'
+alias sf='php app/console'
+alias sfsh='sf -s'
 alias sfs='sfsh'
+alias sf-server='sudo php app/console server:run 0.0.0.0:80'
