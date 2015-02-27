@@ -11,4 +11,7 @@ gdrive=~/GoogleDrive
 sf=~/workspace/symfony
 cash=~/workspace/CASH
 finite=~/workspace/Finite
-: ~downloads ~dropbox ~workspace ~p24web ~testing ~vagrant ~images ~desktop ~gdrive ~sf ~p24dev ~cash ~finite
+xavier=~/workspace/Xavier
+cms=~/workspace/CMS
+slides=~/GoogleDrive/p24/Slides
+: ~downloads ~dropbox ~workspace ~p24web ~testing ~vagrant ~images ~desktop ~gdrive ~sf ~p24dev ~cash ~finite ~xavier ~cms ~slides
