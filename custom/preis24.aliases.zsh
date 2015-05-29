@@ -16,3 +16,7 @@ alias ooservice='soffice --headless --accept="socket,host=127.0.0.1,port=8100;ur
 # 2.0 stuff
 alias rsync.from.dev.cash='rsync -avrzL --exclude="^app/cache/" --exclude="^app/logs" --progress -e ssh development:/opt/development/cash/www/ /home/markmann/workspace/CASH/'
 alias rsync.to.dev.cash='rsync -avrzL --exclude="^app/cache/" --exclude="^app/logs" --progress -e ssh /home/markmann/workspace/CASH/ development:/opt/development/cash/www/'
+
+# cash
+alias cash.demo='cd ~cash && watch -n 120 "php app/console doctrine:mongodb:fixtures:load" NUL & php app/console p24:cash:pulse -d -p 3'
+alias cash.consumers.start="tmpfile=$(mktemp) && echo -e 'startup_message off\nscreen -t deliver_telekom /home/markmann/workspace/CASH/app/console rabbitmq:consumer -w application_delivery_telekom\nsplit\nfocus\nscreen -t deliver_vodafone /home/markmann/workspace/CASH/app/console rabbitmq:consumer -w application_delivery_vodafone\nsplit\nfocus\nscreen -t deliver_simfinity /home/markmann/workspace/CASH/app/console rabbitmq:consumer -w application_delivery_simfinity\nsplit\nfocus\nscreen -t deliver_o2 /home/markmann/workspace/CASH/app/console rabbitmq:consumer -w application_delivery_o2' > $tmpfile && sudo screen -c $tmpfile"

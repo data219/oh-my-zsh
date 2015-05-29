@@ -14,4 +14,5 @@ finite=~/workspace/Finite
 xavier=~/workspace/Xavier
 cms=~/workspace/CMS
 slides=~/GoogleDrive/p24/Slides
-: ~downloads ~dropbox ~workspace ~p24web ~testing ~vagrant ~images ~desktop ~gdrive ~sf ~p24dev ~cash ~finite ~xavier ~cms ~slides
+authBundle=~/workspace/P24AuthorizationBundle
+: ~downloads ~dropbox ~workspace ~p24web ~testing ~vagrant ~images ~desktop ~gdrive ~sf ~p24dev ~cash ~finite ~xavier ~cms ~slides ~authBundle
