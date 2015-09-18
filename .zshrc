@@ -7,8 +7,8 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="madman"
 
-# Example aliases
-alias zshconfig="joe ~/.zshrc"
+export EDITOR="joe"
+export BROWSER="google-chrome"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -45,13 +45,14 @@ HIST_STAMPS="yyyy-mm-dd"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(debian common-aliases sudo kate history autojump git history screen composer vagrant urltools dirpersist lol symfony2 web-search gitignore colored-man github symfony2)
+plugins=(debian ubuntu common-aliases command-not-found cp sudo screen history rsync kate history autojump git git-extras composer vagrant urltools dirpersist lol symfony2 web-search gitignore man colored-man colorize github symfony2)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -59,15 +60,6 @@ fi
 
 if [ -d "$HOME/.composer/vendor/bin" ] ; then
     PATH="$HOME/.composer/vendor/bin:$PATH"
-fi
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nano'
-else
-  export EDITOR='joe'
 fi
 
 # Compilation flags
