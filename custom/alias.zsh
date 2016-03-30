@@ -13,3 +13,9 @@ alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 
 alias genghis='php -S 0.0.0.0:8080 ~/bin/genghis.php'
+alias xdebug-off='sudo php5dismod xdebug'
+alias xdebug-on='sudo php5enmod xdebug'
+alias xdoff='xdebug-off'
+alias xdon='xdebug-on'
+
+alias php.ini='sudo joe /etc/php5/cli/php.ini'
