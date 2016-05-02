@@ -1,19 +1,7 @@
 downloads=~/Downloads
 dropbox=~/Dropbox
 workspace=~/workspace
-p24web=~/workspace/p24-web
-testing=~/workspace/Testing
-vagrant=~/vagrant-boxes
 images=~/Images
 desktop=~/Desktop
 gdrive=~/GoogleDrive
-sf=~/workspace/symfony
-cash=~/workspace/CASH
-finite=~/workspace/Finite
-xavier=~/workspace/Xavier
-cms=~/workspace/CMS
-p24=~/GoogleDrive/p24
-p24fabrik=~/GoogleDrive/p24.fabrik.shared
-slides=~/GoogleDrive/p24/Slides
-authBundle=~/workspace/P24AuthorizationBundle
-: ~downloads ~dropbox ~workspace ~p24web ~testing ~vagrant ~images ~desktop ~gdrive ~sf ~cash ~finite ~xavier ~cms ~p24 ~p24fabrik ~slides ~authBundle
+: ~downloads ~dropbox ~workspace ~images ~desktop ~gdrive
