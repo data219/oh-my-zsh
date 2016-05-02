@@ -20,4 +20,4 @@ alias xdon='xdebug-on'
 
 alias php.ini='sudo joe /etc/php5/cli/php.ini'
 
-alias qa-serve='bin/analyze serve --hostname=0.0.0.0 -p8888 NUL &'
+alias qa-serve='bin/analyze serve --hostname=0.0.0.0 -p8888 NUL &!'
