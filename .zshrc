@@ -45,7 +45,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(debian ubuntu common-aliases command-not-found cp sudo screen history rsync kate history autojump brew git git-extras composer vagrant urltools dirpersist lol symfony2 web-search gitignore man colored-man colorize redis-cli)
+plugins=(debian ubuntu common-aliases command-not-found cp sudo screen history rsync kate history autojump brew git git-extras composer vagrant urltools dirpersist lol symfony2 web-search gitignore man colored-man colorize redis-cli chucknorris)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -74,3 +74,13 @@ export PATH
 export ARCHFLAGS="-arch x86_64"
 
 umask 002
+
+NOW=`date +"%s"`
+LASTWELCOME=`stat -c "%X" welcome.sh`
+let diff=NOW-LASTWELCOME
+if [ $diff > 3600 ] && [ ! -f ./.welcome.pid ]; then
+    ./welcome.sh
+    echo $! > ./.welcome.pid
+fi    
+# added by travis gem
+[ -f /home/markmann/.travis/travis.sh ] && source /home/markmann/.travis/travis.sh
