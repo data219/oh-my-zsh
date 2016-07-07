@@ -12,3 +12,6 @@ alias selenium-server='java -jar /home/markmann/bin/selenium-server-standalone.j
 alias myphpsh='APPLICATION_ENV=markmann phpsh CronjobInit.php'
 alias myphpsh.prod='APPLICATION_ENV=prodjoker phpsh CronjobInit.php'
 alias ooservice='soffice --headless --accept="socket,host=127.0.0.1,port=8100;urp;" --nofirststartwizard'
+alias gh.prs.p24.all='gh pr -alO Preis24'
+alias gh.prs.p24.upstream='gh pr -lO Preis24 --remote=upstream'
+alias gh.prs.p24.upstream.all='gh pr -alO Preis24 --remote=upstream'
