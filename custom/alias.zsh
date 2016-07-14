@@ -8,6 +8,8 @@ alias o='xdg-open'
 
 alias cya='sudo reboot'
 alias kthxbai='sudo halt'
+alias byebye='sudo halt'
+alias n8='sudo halt'
 
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
@@ -26,3 +28,5 @@ alias pr='make-pull-request'
 alias get-lost='pr'
 
 alias qa-serve='bin/analyze serve --hostname=0.0.0.0 -p8888 NUL &!'
+
+alias delete.old.kernels="sudo apt-get autoremove --purge 'linux-image-[0-9].*' linux-image-$(uname -r)+"

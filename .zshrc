@@ -75,12 +75,10 @@ export ARCHFLAGS="-arch x86_64"
 
 umask 002
 
-NOW=`date +"%s"`
-LASTWELCOME=`stat -c "%X" welcome.sh`
-let diff=NOW-LASTWELCOME
-if [ $diff > 3600 ] && [ ! -f ./.welcome.pid ]; then
+# welcome
+if [ ! -f ./.welcome.pid ]; then
     ./welcome.sh
     echo $! > ./.welcome.pid
-fi    
-# added by travis gem
-[ -f /home/markmann/.travis/travis.sh ] && source /home/markmann/.travis/travis.sh
+fi
+
+chuck
