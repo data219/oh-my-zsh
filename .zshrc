@@ -7,9 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="madman"
 
-export EDITOR="joe"
-export BROWSER="google-chrome"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -69,7 +66,28 @@ export PATH
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 umask 002
+
+source ~/.gnupg/gpg-agent-info
+export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
+
+# Symfony settings
+export SYMFONY_DEPRECATIONS_HELPER="weak"
+
+export EDITOR="joe"
+export BROWSER="google-chrome"
+
+# Start Genghis
+#php -S 0.0.0.0:8001 ~/bin/genghis.php > /dev/null 2>&1 &
+
+#rm -f ~/.lsyncd/lsyncd.lock
+#lsyncd.sh start
+
+#mount share/1und1
 
 # welcome
 if [ ! -f ./.welcome.pid ]; then

@@ -1,0 +1,12 @@
+
+*** These modified files were found in JOE when it aborted on Thu Jul  6 16:58:55 2017
+*** JOE was aborted because the terminal closed
+
+*** Datei '(Unbenannt)'
+cocomore.aliases.zsh
+
+*** Datei '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc
