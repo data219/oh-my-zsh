@@ -42,7 +42,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ubuntu common-aliases command-not-found cp sudo screen history rsync kate history autojump brew git git-extras composer vagrant urltools dirpersist lol symfony2 web-search gitignore man colored-man colorize redis-cli chucknorris)
+plugins=(ubuntu common-aliases command-not-found cp sudo screen history rsync kate history autojump brew git git-extras composer vagrant urltools dirpersist lol symfony2 web-search gitignore man colored-man colorize redis-cli chucknorris git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,18 +81,15 @@ export SYMFONY_DEPRECATIONS_HELPER="weak"
 export EDITOR="joe"
 export BROWSER="google-chrome"
 
-# Start Genghis
-#php -S 0.0.0.0:8001 ~/bin/genghis.php > /dev/null 2>&1 &
-
-#rm -f ~/.lsyncd/lsyncd.lock
+#rm -f ~/.lsyncd/lsyncd.lock > /dev/null 2>&1
 #lsyncd.sh start
 
 #mount share/1und1
 
 # welcome
-if [ ! -f ./.welcome.pid ]; then
+#if [ ! -f ./.welcome.pid ]; then
     ./welcome.sh
-    echo $! > ./.welcome.pid
-fi
+#    echo $! > ./.welcome.pid
+#fi
 
 chuck
