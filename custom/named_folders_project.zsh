@@ -1,3 +1,4 @@
 grs=~/workspace/grs.cocomore.com
 docker=~/workspace/docker
-: ~grs ~docker
+siegertypen=~/workspace/siegertypen_backend
+: ~grs ~docker ~siegertypen

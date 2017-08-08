@@ -72,8 +72,14 @@ fi
 
 umask 002
 
+# GPG SSH agent stuff
 source ~/.gnupg/gpg-agent-info
 export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
+
+# Tilix workaround
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
 
 # Symfony settings
 export SYMFONY_DEPRECATIONS_HELPER="weak"
