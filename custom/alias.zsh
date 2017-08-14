@@ -34,3 +34,6 @@ alias delete.old.kernels="sudo apt-get autoremove --purge 'linux-image-[0-9].*' 
 alias yubilock.enable='sudo mv /etc/udev/rules.d/85-yubikey-screen-lock.rules.disabled /etc/udev/rules.d/85-yubikey-screen-lock.rules'
 alias yubilock.disable='sudo mv /etc/udev/rules.d/85-yubikey-screen-lock.rules /etc/udev/rules.d/85-yubikey-screen-lock.rules.disabled'
 alias yubilock.exemption='yubilock.disable && read -k1 -s "?Remove Yubikey and press any key to continue... " && yubilock.enable'
+alias ylen=yubilock.enable
+alias yldi=yubilock.disable
+alias ylex=yubilock.exemptiion

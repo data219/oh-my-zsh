@@ -70,32 +70,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-umask 002
-
-# GPG SSH agent stuff
-source ~/.gnupg/gpg-agent-info
-export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
-
-# Tilix workaround
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
-
-# Symfony settings
-export SYMFONY_DEPRECATIONS_HELPER="weak"
-
-export EDITOR="joe"
-export BROWSER="google-chrome"
-
-#rm -f ~/.lsyncd/lsyncd.lock > /dev/null 2>&1
-#lsyncd.sh start
-
-#mount share/1und1
-
 # welcome
-#if [ ! -f ./.welcome.pid ]; then
+if [ ! -f ./.welcome.pid ]; then
     ./welcome.sh
-#    echo $! > ./.welcome.pid
-#fi
+    echo $! > ./.welcome.pid
+fi
 
 chuck
