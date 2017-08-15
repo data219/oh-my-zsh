@@ -7,9 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="madman"
 
-export EDITOR="joe"
-export BROWSER="google-chrome"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -45,13 +42,9 @@ HIST_STAMPS="yyyy-mm-dd"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(debian ubuntu common-aliases command-not-found cp sudo screen history rsync kate history autojump brew git git-extras composer vagrant urltools dirpersist lol symfony2 web-search gitignore man colored-man colorize redis-cli chucknorris)
+plugins=(ubuntu common-aliases command-not-found cp sudo screen history rsync kate history autojump brew git git-extras composer vagrant urltools dirpersist lol symfony2 web-search gitignore man colored-man colorize redis-cli chucknorris git-flow)
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -73,7 +66,9 @@ export PATH
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-umask 002
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
 # welcome
 if [ ! -f ./.welcome.pid ]; then
