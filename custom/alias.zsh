@@ -2,6 +2,7 @@ alias git='LANGUAGE=en_US git'
 
 alias ack='ack-grep'
 alias sudp='sudo'
+alias jeo=joe
 
 alias open='xdg-open'
 alias o='xdg-open'
@@ -36,4 +37,4 @@ alias yubilock.disable='sudo mv /etc/udev/rules.d/85-yubikey-screen-lock.rules /
 alias yubilock.exemption='yubilock.disable && read -k1 -s "?Remove Yubikey and press any key to continue... " && yubilock.enable'
 alias ylen=yubilock.enable
 alias yldi=yubilock.disable
-alias ylex=yubilock.exemptiion
+alias ylex=yubilock.exemption
