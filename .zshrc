@@ -42,7 +42,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ubuntu common-aliases command-not-found cp sudo screen history rsync kate history autojump brew git git-extras composer vagrant urltools dirpersist lol symfony2 web-search gitignore man colored-man colorize redis-cli chucknorris git-flow extract)
+plugins=(ubuntu common-aliases command-not-found cp sudo screen history rsync kate history autojump brew git git-extras composer vagrant urltools dirpersist lol symfony2 web-search gitignore man colored-man colorize redis-cli chucknorris git-flow extract docker docker-compose dotenv emoji)
 
 source $ZSH/oh-my-zsh.sh
 

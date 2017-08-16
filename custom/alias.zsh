@@ -31,6 +31,7 @@ alias get-lost='pr'
 alias qa-serve='bin/analyze serve --hostname=0.0.0.0 -p8888 NUL &!'
 
 alias delete.old.kernels="sudo apt-get autoremove --purge 'linux-image-[0-9].*' linux-image-$(uname -r)+"
+alias rm.bak='find . -type f -name '*~' -delete'
 
 alias yubilock.enable='sudo mv /etc/udev/rules.d/85-yubikey-screen-lock.rules.disabled /etc/udev/rules.d/85-yubikey-screen-lock.rules'
 alias yubilock.disable='sudo mv /etc/udev/rules.d/85-yubikey-screen-lock.rules /etc/udev/rules.d/85-yubikey-screen-lock.rules.disabled'
