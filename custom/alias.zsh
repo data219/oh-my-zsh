@@ -39,3 +39,6 @@ alias yubilock.exemption='yubilock.disable && read -k1 -s "?Remove Yubikey and p
 alias ylen=yubilock.enable
 alias yldi=yubilock.disable
 alias ylex=yubilock.exemption
+
+alias -s php=$EDITOR
+alias -s md=$EDITOR
