@@ -41,5 +41,8 @@ alias ylen=yubilock.enable
 alias yldi=yubilock.disable
 alias ylex=yubilock.exemption
 
+alias x0vncserver='x0vncserver -PasswordFile=/home/markmann/.vnc/passwd'
+alias mirror='wget -mkEpnp'
+
 alias -s php=$EDITOR
 alias -s md=$EDITOR
