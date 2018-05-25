@@ -6,5 +6,6 @@ eva30=~/workspace/eva-3.0
 eva31=~/workspace/eva-3.1
 proneuwagen=~/workspace/proneuwagen
 dealerScore=~/workspace/DealerScore
+activate=~/workspace/activate
 
-: ~meinAutoApp ~clientBundle ~legacyBundle ~erpApp ~eva30 ~eva31 ~proneuwagen ~dealerScore
+: ~meinAutoApp ~clientBundle ~legacyBundle ~erpApp ~eva30 ~eva31 ~proneuwagen ~dealerScore ~activate
