@@ -4,4 +4,6 @@ workspace=~/workspace
 images=~/Images
 desktop=~/Desktop
 gdrive=~/GoogleDrive
-: ~downloads ~dropbox ~workspace ~images ~desktop ~gdrive
+src=~/src
+dumps=~/dumps
+: ~downloads ~dropbox ~workspace ~images ~desktop ~gdrive ~src ~dumps
