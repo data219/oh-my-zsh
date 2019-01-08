@@ -5,6 +5,9 @@ alias sudp='sudo'
 alias sudi='sudo -i'
 alias jeo=joe
 
+alias sjoe='SUDO_EDITOR=joe sudoedit'
+alias skate='SUDO_EDITOR=kate sudoedit'
+
 alias open='xdg-open'
 alias o='xdg-open'
 
