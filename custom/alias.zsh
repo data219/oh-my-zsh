@@ -37,8 +37,6 @@ alias qa-serve='bin/analyze serve --hostname=0.0.0.0 -p8888 NUL &!'
 alias delete.old.kernels="sudo apt-get autoremove --purge 'linux-image-[0-9].*' linux-image-$(uname -r)+"
 alias rm.bak="find . -type f -name '*~' -delete"
 
-alias x0vncserver='x0vncserver -PasswordFile=/home/markmann/.vnc/passwd'
-
 alias mirror='wget -mkEpnp'
 
 alias -s php=$EDITOR
