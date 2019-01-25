@@ -3,6 +3,7 @@ alias git='LANGUAGE=en_US git'
 alias sudp='sudo'
 alias sudi='sudo -i'
 alias jeo=joe
+alias hG='history | grep'
 
 alias sjoe='SUDO_EDITOR=joe sudoedit'
 alias skate='SUDO_EDITOR=kate sudoedit'
@@ -27,3 +28,4 @@ alias -s php=$EDITOR
 alias -s md=$EDITOR
 
 alias apt='apt-fast'
+
