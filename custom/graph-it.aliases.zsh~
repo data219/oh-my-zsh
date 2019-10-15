@@ -9,4 +9,3 @@ alias mount.screwerk.graph='echo mpm964mk | sshfs -o password_stdin -o Identitie
 alias unmount.screwerk.graph='fusermount -u ~/share/screwerk-graph'
 alias mount.graphit.graph='echo mpm964mk | sshfs -s -o password_stdin,IdentitiesOnly=yes,cache=no,reconnect,ServerAliveInterval=15,TCPKeepAlive=yes graphit-graph:/home/graph-it/graph ~/share/grapit-graph'
 alias unmount.graphit.graph='fusermount -u ~/share/graphit-graph'
-alias mount.graphit.shares='mount.graphit.graph ; mount.screwerk.graph'

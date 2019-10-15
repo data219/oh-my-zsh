@@ -29,3 +29,8 @@ alias -s md=$EDITOR
 
 alias apt='apt-fast'
 
+alias mount.gdrive="rclone mount --vfs-cache-mode full gdrive: ~/share/gdrive"
+alias mount.dropbox=" mount --vfs-cache-mode full dropbox: ~/share/dropbox"
+alias mount.private.shares="mount.gdrive ; mount.dropbox"
+
+alias yt2mp3='youtube-dl -x --audio-format mp3'

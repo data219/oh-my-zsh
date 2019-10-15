@@ -6,5 +6,4 @@ desktop=~/Desktop
 gdrive=~/GoogleDrive
 src=~/src
 dumps=~/dumps
-nextcloud=~/Nextcloud/
-: ~downloads ~dropbox ~workspace ~images ~desktop ~gdrive ~src ~dumps ~nextcloud
+: ~downloads ~dropbox ~workspace ~images ~desktop ~gdrive ~src ~dumps
