@@ -1,6 +1,4 @@
 # graph it stuff
-alias dropbox.start='/opt/dropbox-filesystem-fix/dropbox_start.py'
-alias ds='dropbox.start'
 alias vpn.start='sudo vpnc fritz.conf'
 alias vpn.stop='sudo vpnc-disconnect'
 alias mount.openhab.config='sshfs voyager:/etc/openhab2/ ~/share/openhab'
