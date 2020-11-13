@@ -1,0 +1,10 @@
+# graph it stuff
+alias vpn.start='sudo vpnc fritz.conf'
+alias vpn.stop='sudo vpnc-disconnect'
+alias mount.openhab.config='sshfs voyager:/etc/openhab2/ ~/share/openhab'
+alias unmount.openhab.config='fusermount -u ~/share/openhab'
+alias mount.screwerk.graph='echo mpm964mk | sshfs -o password_stdin -o IdentitiesOnly=yes -o cache=no screwerk-graph:/var/lib/graph ~/share/screwerk-graph'
+alias unmount.screwerk.graph='fusermount -u ~/share/screwerk-graph'
+alias mount.graphit.graph='echo mpm964mk | sshfs -s -o password_stdin,IdentitiesOnly=yes,cache=no,reconnect,ServerAliveInterval=15,TCPKeepAlive=yes graphit-graph:/home/graph-it/graph ~/share/grapit-graph'
+alias unmount.graphit.graph='fusermount -u ~/share/graphit-graph'
+alias mount.graphit.shares='mount.graphit.graph ; mount.screwerk.graph'
