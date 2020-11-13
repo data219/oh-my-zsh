@@ -1,6 +1,5 @@
 alias git='LANGUAGE=en_US git'
 
-alias ack='ack-grep'
 alias sudp='sudo'
 alias sudi='sudo -i'
 alias jeo=joe
