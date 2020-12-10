@@ -34,3 +34,5 @@ alias mount.dropbox=" mount --vfs-cache-mode full dropbox: ~/share/dropbox"
 alias mount.private.shares="mount.gdrive ; mount.dropbox"
 
 alias yt2mp3='youtube-dl -x --audio-format mp3'
+
+alias hue=huepl
