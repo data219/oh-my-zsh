@@ -1,7 +1,11 @@
+alias gist=gist-paste
+
 alias gbdm='gbda'
 alias gpum='glum'
+
 alias hub.pr='hub pull-request'
 alias hub.ci='hub ci-status'
+
 alias gh.prs.all='gh pr -al'
 alias gh.prs.upstream='gh pr -l --remote=upstream'
 alias gh.prs.upstream.all='gh pr -al --remote=upstream'
